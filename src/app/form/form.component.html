@@ -3,31 +3,30 @@
 
 
 <body>
-        
-
-    <form class="login-form">
-            <p class="login-text">
-              <span class="fa-stack fa-lg">
-                <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-lock fa-stack-1x"></i>
-              </span>
-            </p>
-            Name:
-            <br>
-            <input type="name" class="login-name" autofocus="true" required="true" value="{{name}}" />
-            <br>
-            Email:
-            <br>
-            <input type="email" class="login-email" required="true" value="{{email}}" /> 
-            <br>
-            Age:
-            <br>
-            <input type="Age" class="login-age" required ="true" value="{{age}}"/>
-            <br>
-            
-            <input type="submit" name="Login" value="Login" class="login-submit" />
-          </form>
-          <a href="#" class="login-forgot-pass">forgot password?</a>
-          <div class="underlay-photo"></div>
-          <div class="underlay-black"></div> 
-          </body>
+        <form>
+           <h1>Form</h1>
+           <div class="inset">
+           <p>
+             <label for="name">Name</label>
+             <input type="text" name="email" value="{{email}}">
+           </p>
+           <p>
+             <label for="email">Email</label>
+             <input type="text" name="email" value="{{email}}">
+           </p>
+           <p>
+               <label for ="age">Age</label>
+               <input type="text" name ="age" value="{{age}}">
+           </p>
+           <p>
+             <input type="checkbox" name="remember" id="remember">
+             <label for="remember">Remember me for 14 days</label>
+           </p>
+           </div>
+           <p class="p-container">
+             <span>Forgot password ?</span>
+             <input type="submit" name="go" id="go" value="Log in">
+           </p>
+         </form>
+           
+       </body>
